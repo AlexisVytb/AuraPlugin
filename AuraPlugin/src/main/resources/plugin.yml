@@ -1,0 +1,75 @@
+name: AuraSystem
+version: 1.0.0
+main: fr.aura.AuraPlugin
+api-version: '1.21'
+author: VotreNom
+description: Système d'Aura inspiré de Hunter x Hunter
+
+commands:
+  ten:
+    description: Active/désactive Ten
+    permission: aura.ten
+  zetsu:
+    description: Active/désactive Zetsu
+    permission: aura.zetsu
+  ren:
+    description: Active/désactive Ren
+    permission: aura.ren
+  hatsu:
+    description: Active/désactive Hatsu
+    permission: aura.hatsu
+  en:
+    description: Active/désactive En
+    permission: aura.en
+  enmax:
+    description: Débloque En max (500 levels requis)
+    permission: aura.enmax
+  shu:
+    description: Active/désactive Shu
+    permission: aura.shu
+  ko:
+    description: Active Ko (cooldown 24h)
+    permission: aura.ko
+  tenup:
+    description: Améliore Ten
+    permission: aura.up.ten
+  zetsuup:
+    description: Améliore Zetsu
+    permission: aura.up.zetsu
+  renup:
+    description: Améliore Ren
+    permission: aura.up.ren
+  hatsuup:
+    description: Améliore Hatsu
+    permission: aura.up.hatsu
+  auramodify:
+    description: Modifie l'aura d'un joueur
+    permission: aura.admin
+
+permissions:
+  aura.ten:
+    default: true
+  aura.zetsu:
+    default: true
+  aura.ren:
+    default: true
+  aura.hatsu:
+    default: true
+  aura.en:
+    default: true
+  aura.enmax:
+    default: true
+  aura.shu:
+    default: true
+  aura.ko:
+    default: true
+  aura.up.ten:
+    default: true
+  aura.up.zetsu:
+    default: true
+  aura.up.ren:
+    default: true
+  aura.up.hatsu:
+    default: true
+  aura.admin:
+    default: op

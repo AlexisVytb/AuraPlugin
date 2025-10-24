@@ -1,0 +1,109 @@
+# Configuration du système d'Aura
+
+# Type de base de données (sqlite ou mysql)
+database:
+  type: sqlite
+  # Pour MySQL, décommenter et configurer :
+  # host: localhost
+  # port: 3306
+  # database: aura
+  # username: root
+  # password: password
+
+# Configuration des effets
+effects:
+  ten:
+    resistance_level: 2
+  
+  zetsu:
+    invisibility_level: 2
+    speed_level: 1
+    blindness_level: 2
+  
+  ren:
+    strength_level: 4
+    resistance_level: 1
+    particle_radius: 5
+  
+  hatsu:
+    resistance_level: 1
+    jump_boost_level: 2
+  
+  en:
+    base_radius: 35
+    radius_per_10_levels: 1
+    max_radius: 100
+    strength_level: 6
+    resistance_level: 5
+    enemy_blindness_level: 2
+  
+  shu:
+    sword_sharpness_level: 10
+    tool_efficiency_level: 10
+  
+  ko:
+    strength_level: 17
+    duration_seconds: 5
+    cooldown_hours: 24
+
+# Courbe d'XP pour les niveaux
+xp_requirements:
+  ten:
+    level_1: 10
+    level_2: 20
+    level_3: 30
+    level_4: 40
+    level_5: 50
+    level_6: 60
+    level_7: 70
+    level_8: 80
+    level_9: 90
+    level_max: 125
+  
+  zetsu:
+    level_1: 10
+    level_2: 20
+    level_3: 30
+    level_4: 40
+    level_5: 50
+    level_6: 60
+    level_7: 70
+    level_8: 80
+    level_9: 90
+    level_max: 125
+  
+  ren:
+    level_1: 10
+    level_2: 20
+    level_3: 30
+    level_4: 40
+    level_5: 50
+    level_6: 60
+    level_7: 70
+    level_8: 80
+    level_9: 90
+    level_max: 125
+  
+  hatsu:
+    level_1: 10
+    level_2: 20
+    level_3: 30
+    level_4: 40
+    level_5: 50
+    level_6: 60
+    level_7: 70
+    level_8: 80
+    level_9: 90
+    level_max: 125
+  
+  enmax: 500
+
+# Particules
+particles:
+  enabled: true
+  update_interval_ticks: 10
+  
+# Performance
+performance:
+  max_particle_radius: 100
+  disable_in_high_load: false
