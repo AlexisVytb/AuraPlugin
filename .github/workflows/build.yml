@@ -1,1 +1,29 @@
+name: Build AuraPlugin
 
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Set up Java
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Build with Maven
+        run: mvn clean package
+
+      - name: Upload JAR
+        uses: actions/upload-artifact@v3
+        with:
+          name: AuraPlugin
+          path: target/*.jar
